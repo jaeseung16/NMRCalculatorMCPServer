@@ -76,7 +76,7 @@ brew install mint
 **2. Install NMRCalculatorMCPServer:**
 
 ```bash
-mint install jaeseung16/NMRCalculatorMCPServer
+mint install jaeseung16/NMRCalculatorMCPServer@main
 ```
 
 **3. Register with Claude Code:**
