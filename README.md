@@ -20,7 +20,7 @@ The nucleus database (120 nuclei) is embedded at compile time, so the binary has
 ### 1. Build
 
 ```bash
-git clone https://github.com/jaeseung-lee/NMRCalculatorMCPServer.git
+git clone https://github.com/jaeseung16/NMRCalculatorMCPServer.git
 cd NMRCalculatorMCPServer
 swift build -c release
 ```
@@ -76,7 +76,7 @@ brew install mint
 **2. Install NMRCalculatorMCPServer:**
 
 ```bash
-mint install jaeseung-lee/NMRCalculatorMCPServer
+mint install jaeseung16/NMRCalculatorMCPServer
 ```
 
 **3. Register with Claude Code:**
