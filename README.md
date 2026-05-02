@@ -15,6 +15,8 @@ The nucleus database (120 nuclei) is embedded at compile time, so the binary has
 
 ## Installation
 
+### Option A: Build from source
+
 ### 1. Build
 
 ```bash
@@ -52,6 +54,44 @@ Add the following to `~/Library/Application Support/Claude/claude_desktop_config
   "mcpServers": {
     "nmr-calculator": {
       "command": "/usr/local/bin/NMRCalculatorMCPServer"
+    }
+  }
+}
+```
+
+Then restart Claude Desktop.
+
+---
+
+### Option B: Install with mint
+
+[mint](https://github.com/yonaskolb/Mint) is a package manager for Swift CLI tools that handles building and installing in one step.
+
+**1. Install mint** (if not already installed):
+
+```bash
+brew install mint
+```
+
+**2. Install NMRCalculatorMCPServer:**
+
+```bash
+mint install jaeseung-lee/NMRCalculatorMCPServer
+```
+
+**3. Register with Claude Code:**
+
+```bash
+claude mcp add nmr-calculator ~/.mint/bin/NMRCalculatorMCPServer
+```
+
+**4. Register with Claude Desktop** — add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "nmr-calculator": {
+      "command": "/Users/YOUR_USERNAME/.mint/bin/NMRCalculatorMCPServer"
     }
   }
 }
